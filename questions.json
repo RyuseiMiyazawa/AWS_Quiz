@@ -1,0 +1,279 @@
+{
+  "stages": {
+    "1": {
+      "title": "ステージ 1",
+      "description": "基本的なAWSサービスの知識を問う初級問題です",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "question": "AWSのコンピューティングサービスで、仮想サーバーを提供するものは？",
+          "options": ["Amazon EC2", "Amazon S3", "Amazon RDS", "Amazon DynamoDB"],
+          "answer": 0,
+          "explanation": "Amazon EC2 (Elastic Compute Cloud) はAWSのコンピューティングサービスで、クラウド内の仮想サーバーを提供します。スケーラブルなコンピューティング容量を提供し、様々なインスタンスタイプから選択できます。"
+        },
+        {
+          "question": "AWSでオブジェクトストレージを提供するサービスは？",
+          "options": ["Amazon EBS", "Amazon S3", "Amazon EFS", "AWS Storage Gateway"],
+          "answer": 1,
+          "explanation": "Amazon S3 (Simple Storage Service) は、AWSのオブジェクトストレージサービスです。高い耐久性、可用性、スケーラビリティを備えており、データバックアップ、アーカイブ、コンテンツ配信など様々な用途に使用できます。"
+        },
+        {
+          "question": "AWSのリレーショナルデータベースサービスは？",
+          "options": ["Amazon DynamoDB", "Amazon Redshift", "Amazon ElastiCache", "Amazon RDS"],
+          "answer": 3,
+          "explanation": "Amazon RDS (Relational Database Service) は、AWSのマネージドリレーショナルデータベースサービスです。MySQL、PostgreSQL、Oracle、SQL Server、MariaDBなど複数のデータベースエンジンをサポートしています。"
+        },
+        {
+          "question": "AWSで仮想プライベートクラウドを構築するサービスは？",
+          "options": ["AWS VPC", "AWS Direct Connect", "AWS Transit Gateway", "AWS Route 53"],
+          "answer": 0,
+          "explanation": "AWS VPC (Virtual Private Cloud) は、AWSクラウド内に論理的に分離されたセクションを作成し、仮想ネットワークを定義できるサービスです。IPアドレス範囲、サブネット、ルートテーブル、ネットワークゲートウェイなどのリソースを制御できます。"
+        },
+        {
+          "question": "AWSのサーバーレスコンピューティングサービスは？",
+          "options": ["Amazon EC2", "AWS Lambda", "Amazon ECS", "AWS Fargate"],
+          "answer": 1,
+          "explanation": "AWS Lambda は、AWSのサーバーレスコンピューティングサービスです。サーバーのプロビジョニングや管理なしでコードを実行でき、使用したコンピューティング時間に対してのみ課金されます。"
+        },
+        {
+          "question": "AWSのCDN（コンテンツ配信ネットワーク）サービスは？",
+          "options": ["Amazon Route 53", "AWS Global Accelerator", "Amazon CloudFront", "AWS App Mesh"],
+          "answer": 2,
+          "explanation": "Amazon CloudFront は、AWSのコンテンツ配信ネットワーク（CDN）サービスです。ウェブサイト、API、動画コンテンツなどを低レイテンシーで高速に配信するために使用されます。"
+        },
+        {
+          "question": "AWSのDNSサービスは？",
+          "options": ["Amazon Route 53", "AWS Direct Connect", "Amazon CloudFront", "AWS Global Accelerator"],
+          "answer": 0,
+          "explanation": "Amazon Route 53 は、AWSのDNS（ドメインネームシステム）サービスです。ドメイン登録、DNSルーティング、ヘルスチェックなどの機能を提供しています。"
+        },
+        {
+          "question": "AWSのNoSQLデータベースサービスは？",
+          "options": ["Amazon RDS", "Amazon Aurora", "Amazon Redshift", "Amazon DynamoDB"],
+          "answer": 3,
+          "explanation": "Amazon DynamoDB は、AWSのフルマネージドNoSQLデータベースサービスです。高速で予測可能なパフォーマンスと、シームレスなスケーラビリティを提供します。"
+        },
+        {
+          "question": "AWSのブロックストレージサービスは？",
+          "options": ["Amazon S3", "Amazon EBS", "Amazon EFS", "AWS Storage Gateway"],
+          "answer": 1,
+          "explanation": "Amazon EBS (Elastic Block Store) は、EC2インスタンス用の永続的なブロックストレージボリュームを提供するAWSのサービスです。データベースやファイルシステムなど、頻繁にアクセスされるデータに適しています。"
+        },
+        {
+          "question": "AWSの負荷分散サービスは？",
+          "options": ["Amazon EC2 Auto Scaling", "AWS Elastic Load Balancing", "Amazon Route 53", "AWS Global Accelerator"],
+          "answer": 1,
+          "explanation": "AWS Elastic Load Balancing (ELB) は、AWSの負荷分散サービスです。着信アプリケーショントラフィックを複数のターゲット（EC2インスタンス、コンテナ、IPアドレスなど）に自動的に分散します。"
+        }
+      ]
+    },
+    "2": {
+      "title": "ステージ 2",
+      "description": "より詳細なAWSサービスの理解を問う中級問題です",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "question": "AWSの監視サービスは？",
+          "options": ["AWS CloudTrail", "Amazon CloudWatch", "AWS Config", "Amazon Inspector"],
+          "answer": 1,
+          "explanation": "Amazon CloudWatch は、AWSの監視サービスです。AWSリソースのメトリクス収集、モニタリング、アラーム設定、ログ収集など様々な監視機能を提供します。"
+        },
+        {
+          "question": "AWSのAPIコールを記録するサービスは？",
+          "options": ["AWS CloudTrail", "Amazon CloudWatch", "AWS Config", "Amazon Inspector"],
+          "answer": 0,
+          "explanation": "AWS CloudTrail は、AWSアカウントのAPIコールを記録するサービスです。誰が何をいつ行ったかを追跡し、セキュリティ分析、リソース変更の追跡、コンプライアンス監査などに役立ちます。"
+        },
+        {
+          "question": "AWSのコンテナオーケストレーションサービスは？",
+          "options": ["AWS Batch", "AWS Fargate", "Amazon ECR", "Amazon ECS"],
+          "answer": 3,
+          "explanation": "Amazon ECS (Elastic Container Service) は、AWSのコンテナオーケストレーションサービスです。Dockerコンテナをスケーラブルで管理しやすい方法で実行できます。"
+        },
+        {
+          "question": "AWSの機械学習サービスは？",
+          "options": ["Amazon SageMaker", "Amazon Rekognition", "Amazon Comprehend", "Amazon Polly"],
+          "answer": 0,
+          "explanation": "Amazon SageMaker は、AWSの包括的な機械学習サービスです。データサイエンティストやデベロッパーが機械学習モデルを構築、トレーニング、デプロイする作業を簡素化します。"
+        },
+        {
+          "question": "AWSのメッセージキューサービスは？",
+          "options": ["Amazon SNS", "Amazon SQS", "Amazon MQ", "AWS Step Functions"],
+          "answer": 1,
+          "explanation": "Amazon SQS (Simple Queue Service) は、AWSのフルマネージドメッセージキューイングサービスです。マイクロサービス、分散システム、サーバーレスアプリケーション間のメッセージ交換を可能にします。"
+        },
+        {
+          "question": "AWSのコンテナレジストリサービスは？",
+          "options": ["Amazon ECS", "Amazon EKS", "Amazon ECR", "AWS App Runner"],
+          "answer": 2,
+          "explanation": "Amazon ECR (Elastic Container Registry) は、AWSのフルマネージドDockerコンテナレジストリです。開発者がコンテナイメージを保存、管理、デプロイするために使用されます。"
+        },
+        {
+          "question": "AWSの通知サービスは？",
+          "options": ["Amazon SNS", "Amazon SQS", "Amazon MQ", "AWS Step Functions"],
+          "answer": 0,
+          "explanation": "Amazon SNS (Simple Notification Service) は、AWSのマネージドメッセージング配信サービスです。アプリケーション間や人へのメッセージ配信を行います。"
+        },
+        {
+          "question": "AWSのデータウェアハウスサービスは？",
+          "options": ["Amazon RDS", "Amazon DynamoDB", "Amazon Redshift", "Amazon Aurora"],
+          "answer": 2,
+          "explanation": "Amazon Redshift は、AWSのマネージドデータウェアハウスサービスです。ペタバイト規模のデータを高速分析できるように設計されています。"
+        },
+        {
+          "question": "AWSのIAMサービスの主な役割は？",
+          "options": ["仮想サーバーの管理", "ストレージの提供", "アクセス管理", "ネットワークの設定"],
+          "answer": 2,
+          "explanation": "AWS IAM (Identity and Access Management) は、AWSリソースへのアクセスを安全に制御するためのサービスです。ユーザー、グループ、ロールを作成し、適切な権限を付与することでセキュリティを確保します。"
+        },
+        {
+          "question": "AWSのファイルストレージサービスは？",
+          "options": ["Amazon S3", "Amazon EBS", "Amazon EFS", "AWS Storage Gateway"],
+          "answer": 2,
+          "explanation": "Amazon EFS (Elastic File System) は、AWSのフルマネージドファイルストレージサービスです。複数のEC2インスタンスからアクセス可能な共有ファイルシステムを提供します。"
+        }
+      ]
+    },
+    "3": {
+      "title": "ステージ 3",
+      "description": "AWSのネットワーキングとセキュリティに焦点を当てた問題",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "question": "AWSのセキュリティグループの主な機能は？",
+          "options": ["ファイアウォールルールの設定", "データの暗号化", "バックアップの管理", "トラフィックの負荷分散"],
+          "answer": 0,
+          "explanation": "AWSセキュリティグループは、仮想ファイアウォールとして機能し、EC2インスタンスへのインバウンドおよびアウトバウンドトラフィックを制御するルールを定義します。"
+        },
+        {
+          "question": "AWSのネットワークACLの特徴は？",
+          "options": ["ステートレスなファイアウォール", "ステートフルなファイアウォール", "負荷分散", "自動スケーリング"],
+          "answer": 0,
+          "explanation": "AWSネットワークACL（アクセスコントロールリスト）はステートレスなファイアウォールで、トラフィックの送信と受信の両方に明示的な許可ルールが必要です。"
+        },
+        {
+          "question": "AWSのVPNサービスは？",
+          "options": ["AWS Direct Connect", "AWS Transit Gateway", "AWS Site-to-Site VPN", "Amazon Route 53"],
+          "answer": 2,
+          "explanation": "AWS Site-to-Site VPNは、オンプレミスのネットワークとAWS VPC間の安全な接続を提供するVPNサービスです。"
+        },
+        {
+          "question": "AWSのセキュリティ対策サービスは？",
+          "options": ["AWS Shield", "AWS WAF", "Amazon GuardDuty", "AWS Security Hub"],
+          "answer": 2,
+          "explanation": "Amazon GuardDutyは、AWSアカウントとワークロードに対する継続的な監視と脅威検出を提供するセキュリティサービスです。"
+        },
+        {
+          "question": "AWSの証明書管理サービスは？",
+          "options": ["AWS Certificate Manager", "AWS KMS", "AWS Secrets Manager", "AWS Identity Center"],
+          "answer": 0,
+          "explanation": "AWS Certificate Manager (ACM) は、AWSサービスとAWSで接続されるリソース用の SSL/TLS証明書を簡単にプロビジョニング、管理、デプロイできるサービスです。"
+        },
+        {
+          "question": "AWSのキー管理サービスは？",
+          "options": ["AWS Secrets Manager", "AWS IAM", "AWS KMS", "AWS CloudHSM"],
+          "answer": 2,
+          "explanation": "AWS KMS (Key Management Service) は、暗号化キーの作成、管理、制御を容易にするマネージドサービスです。"
+        },
+        {
+          "question": "AWSのウェブアプリケーションファイアウォールは？",
+          "options": ["AWS Shield", "AWS WAF", "Amazon GuardDuty", "AWS Security Hub"],
+          "answer": 1,
+          "explanation": "AWS WAF (Web Application Firewall) は、ウェブアプリケーションを攻撃から保護するファイアウォールサービスで、SQLインジェクションやクロスサイトスクリプティングなどの一般的な攻撃から防御します。"
+        },
+        {
+          "question": "AWSのDDoS防御サービスは？",
+          "options": ["AWS Shield", "AWS WAF", "Amazon GuardDuty", "AWS Security Hub"],
+          "answer": 0,
+          "explanation": "AWS Shield は、AWSで実行されているウェブアプリケーションをDDoS攻撃から保護するマネージドサービスです。スタンダードとアドバンストの2つのレベルがあります。"
+        },
+        {
+          "question": "AWSのプライベート接続サービスは？",
+          "options": ["AWS Transit Gateway", "AWS Direct Connect", "AWS PrivateLink", "AWS VPN"],
+          "answer": 2,
+          "explanation": "AWS PrivateLinkは、VPCとサービス間のプライベート接続を提供し、パブリックインターネットを経由せずにAWSサービスに安全に接続できます。"
+        },
+        {
+          "question": "AWSのセキュリティ統合サービスは？",
+          "options": ["AWS Shield", "AWS CloudTrail", "AWS Security Hub", "AWS Config"],
+          "answer": 2,
+          "explanation": "AWS Security Hubは、AWSアカウント全体のセキュリティアラートと、セキュリティチェックの状態を一元的に管理および表示するサービスです。"
+        }
+      ]
+    },
+    "4": {
+      "title": "ステージ 4",
+      "description": "AWSのデータベースとストレージに関する高度な問題",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "question": "AWSのマネージドPostgreSQLサービスは？",
+          "options": ["Amazon Aurora", "Amazon RDS for PostgreSQL", "Amazon Redshift", "Amazon DocumentDB"],
+          "answer": 1,
+          "explanation": "Amazon RDS for PostgreSQLは、フルマネージドのPostgreSQLデータベースサービスで、パッチ適用、バックアップ、障害復旧などの管理タスクを自動化します。"
+        },
+        {
+          "question": "AWSのグローバルデータベースサービスは？",
+          "options": ["Amazon DynamoDB Global Tables", "Amazon Aurora Global Database", "Amazon RDS Multi-AZ", "Amazon Redshift"],
+          "answer": 1,
+          "explanation": "Amazon Aurora Global Databaseは、1つの Aurora MySQLまたはPostgreSQLデータベースを複数のAWSリージョンに分散させ、低レイテンシーのグローバルな読み取りと迅速な災害復旧を可能にします。"
+        },
+        {
+          "question": "AWSのドキュメントデータベースサービスは？",
+          "options": ["Amazon DynamoDB", "Amazon Neptune", "Amazon DocumentDB", "Amazon Timestream"],
+          "answer": 2,
+          "explanation": "Amazon DocumentDBは、MongoDB互換のドキュメントデータベースサービスで、ドキュメント指向のデータモデルをサポートします。"
+        },
+        {
+          "question": "AWSのインメモリキャッシュサービスは？",
+          "options": ["Amazon ElastiCache", "Amazon DynamoDB", "Amazon MemoryDB", "Amazon Elasticache for Redis"],
+          "answer": 0,
+          "explanation": "Amazon ElastiCacheは、クラウド内でインメモリキャッシュを簡単に設定、管理、スケーリングできるウェブサービスで、RedisとMemcachedをサポートしています。"
+        },
+        {
+          "question": "AWSのグラフデータベースサービスは？",
+          "options": ["Amazon DynamoDB", "Amazon Neptune", "Amazon DocumentDB", "Amazon Timestream"],
+          "answer": 1,
+          "explanation": "Amazon Neptuneは、フルマネージドのグラフデータベースサービスで、Property GraphとRDF（Resource Description Framework）モデルの両方をサポートします。"
+        },
+        {
+          "question": "AWSの時系列データベースサービスは？",
+          "options": ["Amazon DynamoDB", "Amazon ElastiCache", "Amazon Timestream", "Amazon Quantum Ledger Database"],
+          "answer": 2,
+          "explanation": "Amazon Timestreamは、IoTやその他のアプリケーションからの時系列データを処理するためのフルマネージドの時系列データベースサービスです。"
+        },
+        {
+          "question": "AWSのキーバリューNoSQLデータベースは？",
+          "options": ["Amazon RDS", "Amazon Aurora", "Amazon DynamoDB", "Amazon Redshift"],
+          "answer": 2,
+          "explanation": "Amazon DynamoDBは、高速で予測可能なパフォーマンスを持つフルマネージドのNoSQLkey-valueデータベースサービスです。"
+        },
+        {
+          "question": "AWSの分散データベースレジストリは？",
+          "options": ["Amazon DynamoDB", "Amazon Quantum Ledger Database", "Amazon Neptune", "Amazon DocumentDB"],
+          "answer": 1,
+          "explanation": "Amazon Quantum Ledger Database (QLDB)は、完全マネージドの台帳データベースで、中央の信頼できる権威によって所有される暗号的に検証可能なデータベースを提供します。"
+        },
+        {
+          "question": "AWSのエンタープライズストレージゲートウェイは？",
+          "options": ["AWS Storage Gateway", "Amazon S3", "Amazon EFS", "Amazon FSx"],
+          "answer": 0,
+          "explanation": "AWS Storage Gatewayは、オンプレミスのアプリケーションとAWSクラウドストレージを仮想的にシームレスに接続するハイブリッドクラウドストレージサービスです。"
+        },
+        {
+          "question": "AWSの分散キャッシュサービスは？",
+          "options": ["Amazon ElastiCache", "Amazon MemoryDB", "Amazon DynamoDB", "Amazon Elasticache for Redis"],
+          "answer": 1,
+          "explanation": "Amazon MemoryDBは、Redisと互換性のある、超高速でスケーラブルなデータベースサービスで、フルマネージドのインメモリデータストアを提供します。"
+        }
+      ]
+    }
+  }
+}
+
+
+
+
+
+    
+  
